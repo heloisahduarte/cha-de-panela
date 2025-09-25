@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chá de Panela - Celebre Conosco!</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container header-content">
+            <h1>Chá de Panela</h1>
+            <p>Celebre conosco este momento especial! Estamos organizando nosso lar e adoraríamos sua presença e contribuição.</p>
+        </div>
+    </header>
+
+    <!-- Informações do evento -->
+    <section class="info-section">
+        <div class="container">
+            <h2 class="section-title">Detalhes do Evento</h2>
+            <div class="info-grid">
+                <div class="info-card">
+                    <i>📅</i>
+                    <h3>Data e Hora</h3>
+                    <p>16 de Novembro de 2025<br>Às 13:00 horas</p>
+                </div>
+                <div class="info-card">
+                    <i>📍</i>
+                    <h3>Localização</h3>
+                    <p>Praça Bom Conselho, N 11<br>(Campo da Malha)<br>Realengo</p>
+                </div>
+                <div class="info-card">
+                    <i>💌</i>
+                    <h3>Confirmação</h3>
+                    <p>Por favor, confirme sua presença até 20 de Outubro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Lista de presentes -->
+    <section class="gift-section">
+        <div class="container">
+            <h2 class="section-title">Lista de Presentes</h2>
+            <div class="gift-list">
+                <div class="gift-item">
+                    <span class="gift-name">Jogo de Panelas Antiaderente</span>
+                    <span class="gift-status available">Disponível</span>
+                </div>
+                <div class="gift-item">
+                    <span class="gift-name">Liquidificador</span>
+                    <span class="gift-status reserved">Reservado</span>
+                </div>
+                <div class="gift-item">
+                    <span class="gift-name">Conjunto de Facas</span>
+                    <span class="gift-status available">Disponível</span>
+                </div>
+                <div class="gift-item">
+                    <span class="gift-name">Air Fryer</span>
+                    <span class="gift-status available">Disponível</span>
+                </div>
+                <div class="gift-item">
+                    <span class="gift-name">Jogo de Copos</span>
+                    <span class="gift-status reserved">Reservado</span>
+                </div>
+                <div class="gift-item">
+                    <span class="gift-name">Conjunto de Talheres</span>
+                    <span class="gift-status available">Disponível</span>
+                </div>
+                <button type="button" class="btn btn-list">Lista Completa</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Confirmação de presença -->
+    <section class="rsvp-section">
+        <div class="container">
+            <h2 class="section-title">Confirme sua Presença</h2>
+            <form class="rsvp-form" id="rsvpForm">
+                <div class="form-group">
+                    <label for="name">Seu Nome</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="guests">Número de Acompanhantes</label>
+                    <select id="guests">
+                        <option value="0">Nenhum</option>
+                        <option value="1">1 pessoa</option>
+                        <option value="2">2 pessoas</option>
+                        <option value="3">3 pessoas</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="gift">Presente que pretende levar</label>
+                    <input type="text" id="gift" placeholder="Opcional">
+                </div>
+                <div class="form-group">
+                    <label for="message">Mensagem para os noivos</label>
+                    <textarea id="message" placeholder="Deixe uma mensagem carinhosa..."></textarea>
+                </div>
+                <button type="submit" class="btn btn-block">Confirmar Presença</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container footer-content">
+            <p>Chá de Panela - Maria & João</p>
+            <p>Entre em contato: (11) 99999-9999 | cha@depanela.com</p>
+        </div>
+    </footer>
+
+    <!-- Modal de confirmação -->
+    <div class="modal" id="confirmationModal">
+        <div class="modal-content">
+            <span class="close-modal" id="closeModal">&times;</span>
+            <h2>Obrigado!</h2>
+            <p>Sua presença foi confirmada com sucesso.</p>
+            <p>Estamos ansiosos para celebrar com você!</p>
+            <button class="btn" id="modalCloseBtn">Fechar</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
